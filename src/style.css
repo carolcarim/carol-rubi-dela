@@ -17,8 +17,8 @@ body {
 h1 {
   font-size: 42px;
   color: rgb(26, 80, 138);
-  text-shadow: -1px 0 rgb(58, 159, 190), 0 1px rgb(58, 159, 190),
-	  1px 0 rgb(58, 159, 190), 0 -1px rgb(58, 159, 190);
+  text-shadow: -1px 0 rgb(29, 95, 115), 0 1px rgb(50, 101, 116),
+	  1px 0 rgb(40, 93, 109), 0 -1px rgb(54, 103, 117);
 }
 
 label {
