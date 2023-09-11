@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Analizador de texto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <script src="index.js" type="module"></script>
 
-<body>
-  <script src="index.js" type="module"></script>
-</body>
+    <header>
+      <h1>ANALIZADOR DE TEXTO</h1>
+    </header>
+
+    <textarea
+      name="user-input"
+      placeholder="Ingresa tu texto aquí..."
+    ></textarea>
+    <aside>
+      <button type="reset" id="reset-button">Restablecer</button>
+    </aside>
+      <ul>
+        <li class="Cajitas" data-testid="word-count">Palabras: 0</li>
+        <li class="Cajitas" data-testid="character-count">Caracteres: 0</li>
+        <li class="Cajitas" data-testid="character-no-spaces-count">
+          Caracteres (sin espacios y signos de puntuación): 0
+        </li>
+        <li class="Cajitas" data-testid="number-count">Números: 0</li>
+        <li class="Cajitas" data-testid="number-sum">Suma de números: 0</li>
+        <li class="Cajitas" data-testid="word-length-average">
+          Longitud media de palabras: 0
+        </li>
+      </ul>
+
+    <footer>
+      <p>Carol Rubilar del Alcázar Ⓡ </p>
+    </footer>
+  </body>
 </html>

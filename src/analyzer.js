@@ -1,21 +1,55 @@
-const analyzer = {  
+const analyzer = {
   getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    const palabras = text.match(/\b[a-z0-9]+\b/gi);
+    if (palabras) {
+      return palabras.length;
+    } else {
+      return 0;
+    }
   },
+
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    let caracteres = 0;
+    for (let i = 0; i < text.length; i++) {
+      caracteres++;
+    }
+    return caracteres;
   },
+
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const cleanText = text.replace(/[^\w]/g, "");
+    return cleanText.length;
   },
-  getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  },
+
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const numbers = text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g);
+    if (!numbers) {
+      return 0;
+    }
+    return numbers.length;
   },
+
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    const sumaNumeros = text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g);
+    if (sumaNumeros) {
+      const suma = sumaNumeros.reduce(
+        (accumulator, currentValue) => accumulator + parseFloat(currentValue),
+        0
+      );
+      return suma;
+    } else {
+      return 0;
+    }
+  },
+
+  getAverageWordLength: (text) => {
+    const longitudPalabras = text.split(/\s+/);
+    const totalLength = longitudPalabras.reduce(
+      (sum, word) => sum + word.length,
+      0
+    );
+    const averageLength = totalLength / longitudPalabras.length;
+    return parseFloat(averageLength.toFixed(2));
   },
 };
 

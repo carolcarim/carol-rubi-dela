@@ -1,0 +1,98 @@
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  background-color: rgb(143, 199, 211);
+  background-repeat: no-repeat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  color: rgb(26, 80, 138);
+  text-shadow: -1px 0 rgb(58, 159, 190), 0 1px rgb(58, 159, 190),
+	  1px 0 rgb(58, 159, 190), 0 -1px rgb(58, 159, 190);
+}
+
+label {
+  font-size: 30px;
+  color: rgb(26, 80, 138);
+  text-align: center;
+}
+
+textarea[name="user-input"] {
+  width: 40%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+#reset-button {
+  box-sizing: border-box;
+  border: 1px solid rgb(58, 159, 190);
+  background-color: rgb(26, 80, 138);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 15px;
+}
+
+#reset-button:hover { 
+  background-color: rgb(45, 125, 150); 
+  border: 1px solid rgb(45, 125, 150);
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+ul {
+  display: flex; height: 10em;
+  flex-wrap: wrap; align-content: stretch;
+  padding: 20px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.Cajitas {
+  list-style: none;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 159, 190);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(58, 159, 190);
+  border-radius: 15px;
+  padding: 20px 20px; 
+  width: 350px;
+  height: 50px;
+  margin: 10px;
+}
+
+.Cajitas:hover { 
+  background-color: rgb(45, 125, 150); 
+  border: 1px solid rgb(45, 125, 150);
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(77, 150, 158);
+  color: rgb(255, 255, 255);
+}
